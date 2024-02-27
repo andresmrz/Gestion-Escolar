@@ -1,0 +1,47 @@
+/proyecto_web2py
+    /applications
+        /tu_app
+            /controllers             # Controladores para la lógica de la aplicación web2py
+            /cron                    # Tareas programadas para ejecución cron
+            /models                  # Modelos de la base de datos de web2py
+            /modules                 # Módulos Python reutilizables
+                /factory             # Fábricas para la creación de objetos
+                /libs                # Bibliotecas específicas del proyecto
+                /models              # Modelos de negocio específicos del proyecto
+                /processes           # Procesos de negocio
+                /renderer            # Renderización de vistas o componentes
+                /repository          # Acceso y gestión de la base de datos
+                /services            # Servicios ofrecidos por la aplicación
+                    /api_services    # Servicios para la API
+                    /business_logic  # Lógica de negocio
+                /system              # Módulos relacionados con el sistema
+                /templates           # Plantillas para la generación de contenido dinámico
+                /utils               # Utilidades y funciones de ayuda
+            /static                  # Archivos estáticos (CSS, JS, imágenes)
+                /css
+                /js
+                    /src             # Código fuente TypeScript
+                        /factory     # Fábricas para la creación de objetos/instancias
+                        /libs        # Bibliotecas o dependencias externas
+                        /models      # Modelos (p. ej., estructuras de datos)
+                        /processes   # Operaciones o flujos de trabajo complejos
+                        /renderer    # Lógica para renderizar componentes
+                        /repository  # Interacción con APIs o almacenamiento externo
+                        /services    # Servicios, incluyendo lógica de negocio y API
+                            /api_services   # Servicios para comunicarse con APIs
+                            /business_logic # Lógica de negocio específica del cliente
+                        /system      # Código relacionado con el sistema o configuración
+                        /templates   # Plantillas o componentes reutilizables
+                        /utils       # Utilidades y funciones comunes
+                    /dist            # Código TypeScript transpilado a JavaScript
+                /img
+            /views                   # Vistas para renderizar la interfaz de usuario
+    /private                         # Datos y scripts privados de la aplicación
+    /databases                       # Archivos de base de datos SQLite para web2py
+    /migrations                      # Directorio para las migraciones de Alembic
+    /environments                    # Configuraciones de entorno (desarrollo, prueba, producción)
+    /scripts                         # Scripts útiles, como scripts de inicialización de la base de datos
+    /tests                           # Pruebas unitarias y de integración
+    alembic.ini                      # Configuración de Alembic para migraciones
+    tsconfig.json                    # Configuración para el compilador TypeScript
+    requirements.txt                 # Dependencias de Python para pip

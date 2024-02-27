@@ -1,0 +1,31 @@
+<!-- applications/mi_proyecto/views/mi_proyecto/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Estudiantes</title>
+    <script src="{{=URL('static', 'js/studentModel.js')}}"></script>
+    <script src="{{=URL('static', 'js/studentFactory.js')}}"></script>
+    <script src="{{=URL('static', 'js/studentRepository.js')}}"></script>
+    <script src="{{=URL('static', 'js/studentController.js')}}"></script>
+    <script src="{{=URL('static', 'js/studentRenderer.js')}}"></script>
+</head>
+<body>
+    <h1>Registro de Estudiantes</h1>
+    <form id="studentForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="grade">Grado:</label>
+        <input type="text" id="grade" name="grade"><br><br>
+        <button type="submit">Registrar Estudiante</button>
+    </form>
+    <script>
+        const repository = new StudentRepository();
+        const factory = new StudentFactory();
+        const controller = new StudentController(repository, factory);
+        document.getElementById('studentForm').addEventListener('submit', controller.handleSubmit.bind(controller));
+    </script>
+</body>
+</html>
