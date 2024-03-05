@@ -1,0 +1,14 @@
+
+{
+  "compilerOptions": {
+    "target": "es5",                                  // Compila a ECMAScript 5
+    "outDir": "./aplications/gestion_escolar/static/js/dist", // Directorio de salida para JS compilado
+    "rootDir": "./aplications/gestion_escolar/static/js/src", // Directorio raíz de los archivos TS
+    "strict": true,                                   // Activa todas las opciones estrictas
+    "esModuleInterop": true,                          // Permite la interoperabilidad de módulos ES6
+    "forceConsistentCasingInFileNames": true          // Asegura consistencia en mayúsculas y minúsculas en nombres de archivo
+  },
+  "include": [
+    "./aplications/gestion_escolar/static/js/src/**/*"       // Incluye todos los archivos TS de src
+  ]
+}

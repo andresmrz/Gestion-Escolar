@@ -1,0 +1,34 @@
+{{extend 'layout.html'}}
+
+{{block header}}
+<div class="jumbotron jumbotron-fluid background" style="background-color: #333; color:white; padding:30px;word-wrap:break-word;">
+  <div class="container center">
+    <h1 class="display-5">Hola</h1>
+  </div>
+</div>
+{{end}}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div id="formRegisterStudents"></div>
+
+        <script>var exports = {};</script>
+
+        <!-- Vincula aquí tu JavaScript compilado desde TypeScript -->
+        <script src="{{=URL('static','js/dist/models/Student.js')}}"></script>
+        <script src="{{=URL('static','js/dist/renderer/StudentFormRenderer.js')}}"></script>
+        <script>
+            //import { Student } from './Student.js';
+            //import { StudentFormRenderer } from './StudentFormRenderer.js';
+
+            document.addEventListener('DOMContentLoaded', function() 
+            {
+                const student = new Student("Nombre", "Apellido", "email@example.com", new Date("2000-01-01"));
+                const renderer = new StudentFormRenderer();
+                renderer.render(student);
+            });
+        </script>
+    </div>
+</div>
+
+

@@ -8,3 +8,5 @@ export class StudentFormController {
     init() {
         // Initialize the form, add event handlers, etc.
         // Use the renderer class
+    }
+}
